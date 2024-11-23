@@ -1,10 +1,12 @@
 # bf3_fix
+## Choose another language: [English](README_EN.md)
+
 解决战地3在高分辨率屏幕下的UI缩放问题
 ![4K](preview.png)
 
 
 ## 使用方法
-1. clone本项目并构建  
+1. clone本项目并构建 或 下载[Release](https://github.com/GlacierLab/bf3_fix/releases/tag/Prebuilt)中的预编译版本  
 2. 重命名游戏目录下的`Engine.BuildInfo_Win32_Retail_dll`为`ori_Engine.BuildInfo_Win32_Retail_dll`  
 3. 将构建好的`Engine.BuildInfo_Win32_Retail_dll`复制到游戏目录下  
 4. 照常启动游戏  
@@ -19,6 +21,10 @@
 
 ## 缺陷
 - 设置界面的部分文字会闪烁  
+- 仅在单人模式下进行了测试，不保证对反作弊不产生影响，请自行考虑是否用于多人模式  
 
 ## 许可
 MIT 或 [琴梨梨标准许可](https://zhuanlan.zhihu.com/p/7134329439)  
+
+## 鸣谢
+https://github.com/SeanPesce/DLL_Wrapper_Generator
