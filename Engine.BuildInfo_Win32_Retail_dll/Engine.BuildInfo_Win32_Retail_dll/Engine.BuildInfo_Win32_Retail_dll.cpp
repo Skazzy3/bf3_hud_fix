@@ -31,9 +31,11 @@ extern "C" __declspec(naked) void __stdcall getBuildInfo_wrapper(){__asm{jmp mPr
 
 void InjectUIScaleLimit(void) {
 	int value = 0xFF ;
+	int value2 = 0x8e ;
 	//UI检测分辨率的地址
 	WriteProcessMemory(GetCurrentProcess(), (LPVOID)0x01766A9A, (LPVOID)&value, 1, NULL);
 	WriteProcessMemory(GetCurrentProcess(), (LPVOID)0x01766AA2, (LPVOID)&value, 1, NULL);
+	WriteProcessMemory(GetCurrentProcess(), (LPVOID)0x00936733, (LPVOID)&value2, 1, NULL);
 	//按键提示检测分辨率的地址
 	WriteProcessMemory(GetCurrentProcess(), (LPVOID)0x0094FC63, (LPVOID)&value, 1, NULL);
 	WriteProcessMemory(GetCurrentProcess(), (LPVOID)0x0094FC8B, (LPVOID)&value, 1, NULL);
